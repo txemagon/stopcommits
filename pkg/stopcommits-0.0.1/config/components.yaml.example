@@ -1,0 +1,8 @@
+ClassMaker:                                       # Name of a component
+  location: /usr/bin/class_maker.java             # Information about where to find the component svn, git, local...
+  description: Class Factory that makes whatever  # Description about what this component does.
+
+chunkyfactory:                                    # List all your components.
+  location: /usr/bin/chunky_factory.java
+  description: Your description.
+

@@ -1,0 +1,16 @@
+History.txt
+Manifest.txt
+PostInstall.txt
+README.rdoc
+Rakefile
+bin/checkpatch
+config/components.yaml.example
+config/config.yaml.example
+config/deprecated.yaml.example
+config/source.ext.example
+lib/checkpatch/cli.rb
+lib/stopcommits.rb
+lib/stopcommits/checker.rb
+script/console
+script/destroy
+script/generate

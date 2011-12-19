@@ -1,0 +1,11 @@
+--- 
+Class:                                  # Write in this line the name of the deprecated class.
+  components:                           # Suggest a list of components to use instead of the class. 
+    - ChunkyFactory
+    - ClassMaker
+  error: No deberias usar esta clase    # Error msg to show when the class is shown inside the code.
+clase_name2:                            # Deprecate as many classes as you want.
+  components: 
+    - componente 1
+    - componente 2
+  error: No deberias usar esta clase

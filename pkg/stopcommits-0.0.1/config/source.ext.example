@@ -1,0 +1,6 @@
+# Use regular expressions to filter the input files in the commit
+# Only files matching this criteria will be analyzed.
+
+html
+\.js
+my_.*\.txt

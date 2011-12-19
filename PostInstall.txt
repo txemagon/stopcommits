@@ -1,0 +1,46 @@
+Remember to write your config files.
+
+The file extensions of the code to be analyzed are supposed to be in a file source.ext at ~/.stopcommits but you can override this behavior through the command line option --extensions-file
+Type one regular expression filter per line.
+ 
+Make a deprecated.yaml file in your ./stopcommits dir like this:
+Example:
+****************************************
+--- 
+class 1: 
+  components: 
+    - component 1
+    - component 2
+  error: You should have not been using this class
+class 2: 
+  components: 
+    - component 1
+    - component 2
+  error: This is class is deprecateed since yy-mm-dd
+****************************************
+
+The above file starts with the three dashes. Replace class X with your class name. 
+Replace component X with a suggested replacement component.
+components is a keyword (do not touch).
+Finally, error refers to the error message that will be displayed.
+
+In components.yaml (at the same dir) provide at least location and description for a given component. 
+Use whatever extra fields you feel like in your yaml file.
+
+Example:
+****************************************
+ClassMaker:
+  location: /usr/bin/class_maker.java
+  description: Class Factory that makes whatever
+
+chunkyfactory:
+  location: /usr/bin/chunky_factory.java
+  description: Your description.
+****************************************
+
+The config.yaml file overrides the gem defaults. See checkpatch -h for further reference.
+
+Comand line invocation example: ./checkpatch -r ~/lookup/lluvia/lluvia -t 1
+
+For more information on stopcommits, see http://stopcommits.rubyforge.org
+

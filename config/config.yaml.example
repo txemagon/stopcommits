@@ -1,0 +1,10 @@
+# configure the command line options. Command line options take precedence over this file
+--- 
+:repository_path: ~/lookup/lluvia/lluvia
+:hooking: false                                        # When svn-hooking you'll need to provide a transaction.
+# The following lines are the gem defaults uncomment your selection to override the behavior.
+# :repository_path: .                                  # Place where you can find the repo.
+# :extensions_file: ~/.stopcommits/source.ext          # Specify in this file at least one file filter type as regex
+# :svn_look: /usr/bin/svnlook                          # When you comment this line out `which svnlook` is taken
+# :deprecated_classes: ~/.stopcommits/deprecated.yaml  # List of the deprecated file list
+# :components: ~/.stopcommits/components.yaml          # List of components to replace the deprecated classes.
